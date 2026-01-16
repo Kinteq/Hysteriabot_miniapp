@@ -42,7 +42,7 @@ export default function Home() {
   const fetchSubscription = async (uid: number) => {
     try {
       // TODO: Замените на реальный API endpoint вашего бота
-      const response = await fetch(`/api/subscription?userId=${uid}`);
+      const response = await fetch(`https://undiscouragingly-validatory-myrtie.ngrok-free.dev/api/subscription?userId=${uid}`);
       const data = await response.json();
       setSubscription(data);
     } catch (error) {
